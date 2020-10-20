@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_blog_post"
+        android:layout_width="0dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="198dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="UserName"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/postLikeBtn"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_description"
+                app:srcCompat="@mipmap/a_search" />
+
+            <TextView
+                android:id="@+id/post_date"
+                android:layout_width="121dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:text="DATE"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/user_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/post_description"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text=" d,jksdjf fskjehfjshdlf fjhelfsae efehlksdflk sljehflhdslkf fheflkslkdfnsdf esfsfdf  esfesf sefecse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_date" />
+
+            <TextView
+                android:id="@+id/post_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.003"
+                app:layout_constraintStart_toEndOf="@+id/postLikeBtn"
+                app:layout_constraintTop_toBottomOf="@+id/post_description" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
